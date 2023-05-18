@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: #7812BB;
+  /* background-color: rgb(58, 58, 58); */
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+#content-container{
+  display: flex;
+  gap: 1rem;
+  background-color: transparent;
+  margin: 1rem;
+  padding: 2rem;
+  color: white;
+}
+
+form{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5px;
+  gap: .26rem;
+  font-size: 20px;
+}
+
+form > input{
+  height: 50px;
+  font-size: 15px;
+  border-radius: .7rem;
+}
+
+
+
+form > button{
+  height: 40px;
+  border-radius: .7rem;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #D2691E;
+  font-weight: bolder;
+}
+
+#sectionContainer{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#balance{
+  font-size: 28px;
+}
+
+.divs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  margin: .3rem;
+  padding: 0px 0px 1px 0px;
+  /* font-weight: bolder; */
+}
+
+.divs > span {
+  flex: 1;
+}
+
+.transaction-value{
+  display: flex;
+  justify-content: flex-end;
+  text-align: justify;
+  margin-right: 2rem;
+}
+
+
+.edit-btn{
+  background-color: #D2691E;
+  padding: .6rem;
+  border-radius: .3rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.delete-btn{
+  background-color: #A52A2A;
+  padding: .6rem;
+  border-radius: .3rem;
+  margin-left: .3rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+h1, h2 {
+  font-size: 43px;
+}
+
+
+.credit{
+  color: #05ca05;
+}
+
+.debit{
+  color:#A52A2A;
+}

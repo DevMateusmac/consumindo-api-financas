@@ -1,0 +1,39 @@
+{
+  "transactions": [
+    {
+      "name": "Lanche",
+      "value": -40,
+      "id": 1
+    },
+    {
+      "name": "freela 1",
+      "value": 1500,
+      "id": 2
+    },
+    {
+      "name": "Pizza",
+      "value": -50,
+      "id": 3
+    },
+    {
+      "name": "Celular",
+      "value": -2500,
+      "id": 4
+    },
+    {
+      "name": "skin cs",
+      "value": -35,
+      "id": 5
+    },
+    {
+      "name": "Deposito",
+      "value": 3500,
+      "id": 6
+    },
+    {
+      "name": "freela 2",
+      "value": 450,
+      "id": 7
+    }
+  ]
+}
