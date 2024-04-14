@@ -2,7 +2,7 @@ let allTransactions = []
 
 //faz a requisição no backend GET
 async function getData(){
- return await fetch('http://localhost:3000/transactions').then(res => res.json())
+ return await fetch('https://finance-json-server-repo.vercel.app/transactions').then(res => res.json())
 }
 
 //renderiza na tela
@@ -42,7 +42,7 @@ function renderContentOnScreen(data){
     deletebtn.parentNode.remove()
     let contentIndex = allTransactions.findIndex(transaction => transaction.id == deletebtn.id)
     allTransactions.splice(contentIndex, 1)
-    await fetch('http://localhost:3000/transactions/' + data.id, {method: 'DELETE'})
+    await fetch('https://finance-json-server-repo.vercel.app/transactions' + data.id, {method: 'DELETE'})
     updateBalance()
   })
 
@@ -106,7 +106,7 @@ document.querySelector('form').addEventListener('submit', async (ev) => {
   }
 
   if(id){
-    const response = await fetch(`http://localhost:3000/transactions/${id}`, {
+    const response = await fetch(`https://finance-json-server-repo.vercel.app/transactions/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ document.querySelector('form').addEventListener('submit', async (ev) => {
     document.querySelector('#id').value = ''
     setContentToRender()
   }else{
-    const response = await fetch('http://localhost:3000/transactions', {
+    const response = await fetch('https://finance-json-server-repo.vercel.app/transactions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
