@@ -42,7 +42,7 @@ function renderContentOnScreen(data){
     deletebtn.parentNode.remove()
     let contentIndex = allTransactions.findIndex(transaction => transaction.id == deletebtn.id)
     allTransactions.splice(contentIndex, 1)
-    await fetch('https://finance-json-server-repo.vercel.app/transactions' + data.id, {method: 'DELETE'})
+    await fetch('https://finance-json-server-repo.vercel.app/transactions/' + data.id, {method: 'DELETE'})
     updateBalance()
   })
 
